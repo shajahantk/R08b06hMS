@@ -70,23 +70,21 @@ frequencies interact, the interaction time is determined by
 the droplet with the higher activity.
 
 \section{Methods}
-We have used the aqueous droplets of BZ reaction mixture in 
-immersed in monoolein-squalane oil.
-The chemical concentrations of Belousov-Zhabotinsky stock solution 
-is as follows:
-0.96M malonic acid (\ch{CH_2(COOH)_2}), 0.97M sodium bromide (NaBr), 
-0.5M sulphuric acid (\ch{H_2SO_4}), and
-25mM ferroin indicator solution (\ch{[Fe(phe)_3]SO_4}) was used as a
-metal catalyst and indicator. We varied the
-sodium bromate (\ch{NaBrO_3}) concentration from 0.48M-0.96M. 
-We mixed them using a magnetic stirrer with
-continuous stirring until first chemical oscillation observed. The
-time required to get the first oscillation is reduced with the sodium
-bromate concentration. After the first oscillation, we placed 2$\mu$L of this mixture
-into a 10mM monoolein-squalane oil medium inside a 5cm diameter S-line Petri dish.
-The experiments were conducted at room temperature ($24^{\circ}$), 
-maintaining consistent environmental conditions
-throughout the experiments. 
+We have used the aqueous droplets of BZ reaction mixture in immersed
+in monoolein-squalane oil.  The chemical concentrations of
+Belousov-Zhabotinsky stock solution is as follows: 0.96M malonic acid
+(\ch{CH_2(COOH)_2}), 0.97M sodium bromide (NaBr), 0.5M sulphuric acid
+(\ch{H_2SO_4}), and 25mM ferroin indicator solution
+(\ch{[Fe(phe)_3]SO_4}) was used as a metal catalyst and indicator. We
+varied the sodium bromate (\ch{NaBrO_3}) concentration from
+0.48M-0.96M.  We mixed them using a magnetic stirrer with continuous
+stirring until first chemical oscillation observed. The time required
+to get the first oscillation is reduced with the sodium bromate
+concentration. After the first oscillation, we placed 2$\mu$L of this
+mixture into a 10mM monoolein-squalane oil medium inside a 5cm
+diameter S-line Petri dish.  The experiments were conducted at room
+temperature ($24^{\circ}$), maintaining consistent environmental
+conditions throughout the experiments.
 
 The movement of the BZ droplets were recorded
 using a CMOS camera.
@@ -98,6 +96,8 @@ more than 300 droplets. A schematic diagram of the experimental setup is shown
 in figure~\ref{fig:setup}.
 
 \todo{How do we track the droplet? Specify the algorithm/method}
+
+
 
 \begin{figure}[H]
 	\centering
@@ -111,12 +111,48 @@ in figure~\ref{fig:setup}.
 	\label{fig:setup}
 \end{figure}
 
-\todo[inline]{Include a brief description of BZ reaction mechanism and 
-about color oscillations. If needed a schematic can be added to figure 2.}
+\todo[inline]{Include a brief description of BZ reaction mechanism and
+  about color oscillations. If needed a schematic can be added to
+  figure 2.}  The Belousov-Zhabotinsky (BZ) reaction is a chemical
+process characterized by cyclic oscillations. These oscillations can
+be seen within a BZ droplet, displaying red and blue colors that
+correspond to the oxidation states of a metal catalyst. When metal
+catalyst is in its oxidized state ($Fe^{4+}$), the BZ reaction
+exhibits a blue color, while in its reduced state ($Fe^{3+}$), it
+appears red. This phenomenon allows us to observe the chemical
+oscillations within the BZ droplet, as visible in figure \ref{fig:BZ
+  Drop chemical wave}.
+
+
+
+The Belousov-Zhabotinsky reaction is a complex process that consists
+of three main stages, each involving numerous sub-reactions. In the
+first stage, there is a continuous consumption of bromide (\ch{Br^-})
+ions. Once the concentration of these ions drops below a certain
+level, the second stage begins. During the second stage, the metal
+catalyst undergoes oxidation, and the reaction turns blue. The third
+stage involves a reduction of the metal catalyst, leading to a
+significant increase in the concentration of \ch{Br^-} ions. As the
+levels of \ch{Br^-} ions rise sufficiently, the cycle restarts with
+the first stage. The third stage essentially acts as a reset for the
+entire reaction \cite{field1974oscillations}. This process can be
+visualized through the BZ droplet, as shown in figure \ref{fig:BZ
+  Droplet}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Figurs/Picture2.png}
+	\caption{\textbf{Belousov zhabotinsky Reaction Droplet:} (a)
+          It is the illustration of the self-propelled BZ droplet and
+          mechanism of Belousov-Zhabotinsky chemical reaction inside
+          the droplet. }
+	\label{fig:BZ Droplet}
+\end{figure}
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Figurs/Illustration_scalebar1.pdf}
+    \includegraphics[width=0.7\linewidth]{Figurs/Illustration_scalebar.pdf}
     \caption{\textbf{Self-Propelled Motion of BZ Droplet:} (a) It illustrates the
     	self-propelled BZ droplet motion and propagation of chemical
     	wave inside the droplet. The direction of the chemical wave
@@ -157,11 +193,23 @@ about color oscillations. If needed a schematic can be added to figure 2.}
 %reduction in interfacial tension around the BZ droplet, BZ droplet
 %moves from lower interfacial tension to higher interfacial tension.
 
-A small droplet containing 2$\mu L$ of the  Belousov-Zhabotinsky reagents is placed in the 
-Petri dish inside the oily medium. The dynamics of chemical oscillation and 
-the subsequent movement of the droplet can be controlled by the 
-bromate concentration ???. Figure~\ref{fig:activity}~a shows the dynamics of
-chemical waves within the droplet \todo{please produce a sequence of images}.
+A small droplet containing 2$\mu L$ of the Belousov-Zhabotinsky
+reagents is placed in the Petri dish inside the oily medium. The
+dynamics of chemical oscillation and the subsequent movement of the
+droplet can be controlled by the bromate concentration
+???. Figure~\ref{fig:activity}~a shows the dynamics of chemical waves
+within the droplet \todo{please produce a sequence of images}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Figurs/111.png}
+	\caption{\textbf{Belousov zhabotinsky Reaction in Droplet:}
+          (a) It is the illustration of the self-propelled BZ droplet
+          and mechanism of Belousov-Zhabotinsky chemical reaction
+          inside the droplet. }
+	\label{fig:BZ Drop chemical wave}
+\end{figure}
+
 The average light intensity inside the droplet varies periodically inside 
 the droplet and we plot the same in Figure~\ref{fig:activity}~b. The 
 movement of the droplet is tracked as discussed in the Method, and the 
@@ -195,20 +243,17 @@ counting number of direction changes as the droplet moves.
     \label{fig:activity}
 \end{figure}
 
-We investigate the characteristics of the movement of BZ droplets as we
-vary sodium bromate concentrations.
-As the concentration of
-sodium bromate increases, the BZ droplet’s trajectory becomes
-increasingly complex (see figure~\ref{fig:activity}~(a-c)).
-With higher sodium bromate
-concentrations in the BZ droplet, the reaction rate increases,
+We investigate the characteristics of the movement of BZ droplets as
+we vary sodium bromate concentrations.  As the concentration of sodium
+bromate increases, the BZ droplet’s trajectory becomes increasingly
+complex (see figure~\ref{fig:activity}~(a-c)).  With higher sodium
+bromate concentrations in the BZ droplet, the reaction rate increases,
 resulting in a rise in the frequency of chemical oscillations within
-the droplet. We determine the oscillation frequency by counting the
-number of oscillations recorded during the 16-minute
-experiment\todo{This is very crude. Can you use time series and 
-cross check the frequency}. 
-Figure~\ref{fig:activity}(d) shows that the oscillation
-frequency is increased with sodium bromate
+the droplet. We determine the oscillation frequency from the average
+blue color intensity of the BZ droplet. We consider the difference in
+time between consecutive highest average blue color intensity as a
+period of oscillation in the BZ droplet.  Figure~\ref{fig:activity}(d)
+shows that the oscillation frequency is increased with sodium bromate
 concentration. Additionally, we tracked how often the droplet's path
 fluctuated from its straight trajectory during the initial 200 seconds
 of motion. This directional fluctuation also increases with higher
@@ -216,22 +261,23 @@ sodium bromate concentrations. We measured the instantaneous speed of
 the BZ droplet every second, then averaged these measurements to
 determine the overall speed of the BZ droplet. We observed that the
 speed of the BZ droplet increases with the sodium bromate
-concentration. Figure~\ref{fig:activity}(e)??? shows that 
-directional fluctuations also increase
-with sodium bromate concentration. We also measure the droplet speed
-and find that droplet speed also increases with sodium bromate.
-This confirms that BZ droplets
-exhibit higher activity at higher sodium bromate concentrations.
+concentration. Figure~\ref{fig:activity}(d-f) shows that the frequency
+of chemical oscillations inside BZ droplet, directional fluctuations,
+speed of the BZ droplet increases with sodium bromate concentration.
+This confirms that BZ droplets exhibit higher activity at higher
+sodium bromate concentrations.
 
-When several BZ droplets are placed in a Petri dish BZ droplets, 
-different droplets move in different directions.
-But we observe that droplets often discover other droplet, come closer to 
-it, and move around or moved parallel for some time, and then move away (see figure~\ref{fig:tango}).
-The circular motion of one droplet around its pair is seen when 
-the inter-droplet distance (the distance between the centers of
-droplets) was 2.5mm or less.\todo{Is this true irrespective of the size of the droplets?}
-(See supplementary videos). The bromo-mono-olein layer \todo{Check if the name is correct?} that forms around each droplet
-in the squalein-monolein medium can prevent the droplets from merging~\cite{thutupalli2011bilayer}.
+When several BZ droplets are placed in a Petri dish BZ droplets,
+different droplets move in different directions.  But we observe that
+droplets often discover other droplet, come closer to it, and move
+around or moved parallel for some time, and then move away (see
+figure~\ref{Inter-Droplet Distance}).  The circular motion of one
+droplet around its pair is seen when the inter-droplet distance (the
+distance between the centers of droplets) was 2.5mm or less.\todo{Is
+  this true irrespective of the size of the droplets?}  (See
+supplementary videos). The bromo-mono-olein layer that forms around
+each droplet in the squalein-monolein medium can prevent the droplets
+from merging~\cite{thutupalli2011bilayer}.
 
 We charatcterised this pairwise interaction by measuring the total time 
 in which the two droplets stay in close proximity. The 
@@ -278,19 +324,19 @@ the inter-droplet distance is below 2.5~mm (figure~\ref{dropletDistance}).
     %\label{fig:enter-label}
 %\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\linewidth]{Figurs/Diff_NaBrO3_trajectories.pdf}
-    \caption{\textbf{Interaction of BZ Droplet :} Plots a, b, and c
-      are the trajectories of interaction of the BZ droplet for 0.48M,
-      0.72M, and 0.96M sodium bromate concentration, respectively. The
-      diameter of the BZ droplet was 1.75mm. ${T_0}$, ${T_{1/2}}$,
-      and ${T_0}$ represent the BZ droplets' position before
-      interaction, during interaction, and after interaction,
-      respectively. The arrow presents the direction of self-propelled
-      motion of the BZ droplets.}
-    \label{fig:tango}
-\end{figure}
+%\begin{figure}[H]
+    %\centering
+    %\includegraphics[width=1\linewidth]{Figurs/Diff_NaBrO3_trajectories.pdf}
+   % \caption{\textbf{Interaction of BZ Droplet :} Plots a, b, and c
+    %  are the trajectories of interaction of the BZ droplet for 0.48M,
+    %  0.72M, and 0.96M sodium bromate concentration, respectively. The
+     % diameter of the BZ droplet was 1.75mm. ${T_0}$, ${T_{1/2}}$,
+      %and ${T_0}$ represent the BZ droplets' position before
+      %interaction, during interaction, and after interaction,
+     % respectively. The arrow presents the direction of self-propelled
+      %motion of the BZ droplets.}
+    %\label{fig:tango}
+%\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -304,7 +350,7 @@ the inter-droplet distance is below 2.5~mm (figure~\ref{dropletDistance}).
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\linewidth]{Figurs/NaBrO3_R12_combined.pdf}
+    \includegraphics[width=1\linewidth]{Figurs/R12_NaBrO3_trajectories}
     \caption{\textbf{Inter Droplet Distance with Sodium Bromate:} Plot
       a, b, and c present the distance between the center of the
       interacting droplet with time for the different \ch{NaBrO_3}
@@ -337,7 +383,6 @@ a similar behavior as we observed in figure
 different activities containing BZ droplets interact, the interaction
 time of the BZ droplet depends on the BZ droplet with higher activity
 or sodium bromate concentration.
-\todo{Change these figures into a hostogram. Figs 4,6,7 can be combined}.
 % When the two BZ droplets come together, they show collective
 % motion. During this collective motion, bromine ions react with
 % monoolein from the oil medium and reduce the interfacial tension in
@@ -446,24 +491,23 @@ or sodium bromate concentration.
 \end{figure}
 
 We also investigated how droplets of different sizes interact with one
-another. We observed three distinct types of dynamics based on how
-the droplets approach each other. The droplets can either arrive from
+another. We observed three distinct types of dynamics based on how the
+droplets approach each other. The droplets can either arrive from
 opposite directions, move in parallel, or have a larger droplet trail
-behind a smaller one. Larger BZ droplet has the higher speed than the smaller BZ droplet. When
-a small droplet approaches from the opposite direction, or when both
-droplets move parallel while maintaining a minimum separation, the
-interaction time is shorter than when a larger droplet follows a
-smaller one. In the case where the large droplet trails the small one,
-its speed is suppressed by the smaller droplet, leading to a sustained
-interaction for long time (figure \ref{Different_size}).
+behind a smaller one. Larger BZ droplet has the higher speed than the
+smaller BZ droplet. When a small droplet approaches from the opposite
+direction, or when both droplets move parallel while maintaining a
+minimum separation, the interaction time is shorter than when a larger
+droplet follows a smaller one. In the case where the large droplet
+trails the small one, its speed is suppressed by the smaller droplet,
+leading to a sustained interaction for long time (figure
+\ref{Different_size}).
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\linewidth]{Close_long_interaction.pdf}
+    \includegraphics[width=0.8\linewidth]{Figurs/Barplot.pdf}
     \caption{\textbf{Interaction Time of Different-size Droplet
         Interactions:} The plots present the interactions of
-      different-sized droplets with interaction time. The shaded
-      region presents the fig \ref{Different_size}(a) and (b)
-      interaction, when droplets arrive from opposite directions, or
+      different-sized droplets with interaction time. The interaction a and b are the interaction when droplets arrive from opposite directions, or
       move parallel with minimum distance. The other part contained
       the interactions, which had an interaction time of 50 seconds or
       more. In this interaction region, a small droplet was always
@@ -472,23 +516,26 @@ interaction for long time (figure \ref{Different_size}).
     \label{fig:Big-Smal}
 \end{figure}
 
-\todo{figure \ref{fig:Big-Small} is very vague. Use different symbols for each of the three 
-types of interactions. What does the y-axis signify?}
 
-When two droplets with different size approach from opposite
+When two droplets with different sizes approach from opposite
 directions and move parallel to each other, their interaction time is
-typically less than 50 seconds, as indicated in the shaded area of
-Figure \ref{fig:Big-Small}. Conversely, in other
-sections of the figure, the interaction time exceeds 50 seconds when a
-larger droplet trails a smaller one. When the smaller droplet follows
-the larger on, the interaction time was negligible. The larger
-droplet, moving at a higher speed. When smaller droplet fallows the larger
-droplet, larger droplet easily moved away of interaction and
-interaction was not sustained. Additionally, when two droplets of
-equal size interact, the time of interaction remains consistent
-regardless of their approach sides. The collective interaction of the
-BZ droplets was noted within a 2.5 mm or less distance between them,
-specifically for BZ droplets with a diameter of 1.75 mm.
+typically less than 50 seconds, as we can observe in Figure
+\ref{fig:Big-Small}. Conversely, the interaction time exceeds 50
+seconds when a larger droplet trails a smaller one. When the smaller
+droplet follows the larger one, the interaction time is
+negligible. The larger droplet is moving at a higher speed. When a
+smaller droplet follows the larger droplet, the larger droplet easily
+moves away from interaction and The interaction was not sustained. We
+have recorded a total of 53 interactions for the different-sized
+droplet interactions. We observed 22 percent parallel droplet
+motion. In 45 percent of the interactions, droplets arrived from
+opposite directions, while in 32 percent of the interactions, a
+pattern of falling droplets followed the interaction. Additionally,
+when two droplets of equal size interact, the time of interaction
+remains consistent regardless of their approach sides. The collective
+interaction of the BZ droplets were noted within a 2.5 mm or less
+distance between them, Specifically for BZ droplets with a diameter of
+1.75 mm.
 %\begin{figure}[H]
 %  \centering
 %  \includegraphics[width=0.6\linewidth]{Figurs/Comparison.pdf}
@@ -522,7 +569,9 @@ specifically for BZ droplets with a diameter of 1.75 mm.
 %\end{figure}
 
 \section{Discussion}
-\todo{Please try to explain our results- why the droplets come closer and stay together and move away. What happens as bromine concentration increases. Each new statement should have citations.}
+\todo{Please try to explain our results- why the droplets come closer
+  and stay together and move away. What happens as bromine
+  concentration increases. Each new statement should have citations.}
 It is well known that the chemical oscillations inside the BZ droplet
 and the interfacial tension around the BZ droplet cause the
 self-propelled motion of the BZ droplet. The change in interfacial
@@ -531,20 +580,25 @@ surfactant monoolein. The \ch{Br^-} ions produced in the BZ droplet
 react with monoolein from the oil medium, and this bromination of
 monoolein reduced the interfacial tension around the BZ droplet.
 
-Sodium bromate is source \ch{Br^-} ions in the BZ reaction. At
-higher concentrations of sodium bromate, the BZ reaction produced a
-large number of \ch{Br^-} ions. As the sodium bromate concentration
-increases in the BZ droplet, the rate of bromination of monoolein also
-increases, and as a result, the speed of the BZ droplet increases.
+Sodium bromate is source \ch{Br^-} ions in the BZ reaction. At higher
+concentrations of sodium bromate, the BZ reaction produced a large
+number of \ch{Br^-} ions. When the sodium bromate concentration
+increases in the BZ droplet, the rate of bromination of monoolein
+increases around the surface of BZ droplet, and as a result, the speed
+of the BZ droplet increases \cite{suematsu2021spontaneous}.
 
 
-In the interaction of two BZ droplets, the BZ droplets interact
-until the surrounding interfacial tension is reduced
-sufficiently. When the sodium bromate concentration increased in the
-BZ droplets, the rate of reduction in interfacial tension around BZ
-droplets increased due to bromination of surfactant monoolein from the
-oil. As a result, the interaction time of the BZ droplet decreased
-with the sodium bromate concentration.
+In the interaction of two BZ droplets, while moving in different
+direction two droplets comes together and interact. How they detect
+each other from the long distance still it is unclear. When the two BZ
+comes close then they interact, thair interaction sustain until the
+surrounding interfacial tension is reduced sufficiently. After the
+sufficient reduction of interfacial tension around both the BZ
+droplets, move away from each other. When the sodium bromate
+concentration increased in the BZ droplets, the rate of reduction in
+interfacial tension around BZ droplets increased due to bromination of
+surfactant monoolein from the oil. As a result, the interaction time
+of the BZ droplet decreased with the sodium bromate concentration.
 
 \section{Conclusion}
 The self–propelled motion of the BZ droplet is associated with
@@ -628,7 +682,7 @@ active system by considering the internal energy of the active system.
 % system will serve as a valuable model for investigating the
 % interactions of biomimetic soft swimmers.
 
-\newpage
+%\newpage
 \section{Appendix}
 \input{Appendix}
 %%%%%%%%% bibliography
