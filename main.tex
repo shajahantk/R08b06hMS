@@ -21,17 +21,64 @@
 
 \newpage
 \section{Introduction}
-Self-propelled motion is a common characteristic in many microbial systems. This self-propelled motion in microorganisms is achieved by utilising stored internal energy and harnessing energy from the surrounding environment, converting it into mechanical energy to propel themselves \cite{rosing2005thermodynamics, dixit2023pathway}. There are wide groups of microorganisms, such as E. coli, paramecium, amoeba, and spermatozoa \cite{lauga2009hydrodynamics}, which show the self-propelled motion and use the sophisticated sensing mechanism for the selection of direction of motion, such as chemotaxis, thermotaxis, electrotaxis, magnetotaxis, {\it etc} \cite{kumar2010physics,suarez2006sperm,wagner2024magnetotaxis,hokmabad2022chemotactic,buness2024electrotaxis}. To make a system that can mimic characteristics of microorganisms, researchers designed several active systems, which include Janus particles, camphor boats, micro robots, active droplets, {\it etc.} \cite{gomez2016dynamics,heisler2012swarming, singh2025active}. 
-The active droplets often mimic key characteristics of motion observed in unicellular organisms, including the run-and-tumble behaviour of bacteria, the locomotion of amoebas, and other taxis effects observed in bacteria. For instance, the thymol acetate (TA) droplet demonstrates a run-and-tumble motion. On a sodium dodecyl sulphate (SDS) solution buffered at constant pH \cite{fujino2025differentiation}. At the same time, droplets containing an organic solvent and 2-hexyldecanoic acid can be directed by a pH gradient \cite{lagzi2010maze}. The salt concentration drives the translation motion of an alcohol droplet \cite{cejkova2014dynamics} in a sodium deconate solution. Furthermore, the motion of mercury droplets can be influenced by an electric field \cite{hollo2021electric}.
+Many living and non-living systems, as simple as single cells, and
+small droplets of liquid can harness energy from the surroundings and
+use it to propel themselves~\cite{rosing2005thermodynamics,
+  dixit2023pathway}. They use the sophisticated sensing mechanism for the selection 
+of direction of motion, such as chemotaxis, thermotaxis, electrotaxis, magnetotaxis,
+{\it etc.}~\cite{kumar2010physics,suarez2006sperm,wagner2024magnetotaxis,hokmabad2022chemotactic,buness2024electrotaxis}. 
+Many active systems, including Janus particles, camphor boats, micro robots, and active droplets~\cite{gomez2016dynamics,heisler2012swarming, singh2025active} 
+mimic the sensing and movement patterns found in the living world. 
+For instance, the thymol acetate (TA) droplet exhibits a run-and-tumble motion, a movement 
+pattern commonly observed in bacterial motion~\cite{fujino2025differentiation}. 
+Lagzi and colleagues have shown that droplets containing an organic solvent and 2-hexyldecanoic 
+acid can be directed by a pH gradient \cite{lagzi2010maze}. 
+Similarly, differences in the salt concentration can drive an alcohol droplet~\cite{cejkova2014dynamics} 
+in a sodium deconate solution. 
+Hollo and colleagues have demonstrated that the movement of mercury droplets can be controlled by an electric field~\cite{hollo2021electric}.
 
-One important class of chemically driven active droplets contains the Belousov-Zhabotinsky (BZ) reaction. The BZ reaction is a complex, nonlinear chemical oscillatory reaction \cite{zaikin1970concentration,zhabotinsky1964periodical}. In this reaction, oscillations are observed as a colour change. The chemical
-Oscillations in the BZ reaction can propagate in space as chemical waves, creating circular and spiral patterns \cite{amrutha2022mechanism,amrutha2023theory,sebastian2024effect}. The internal chemical oscillations inside the BZ droplets drive the mechanical motion, converting chemical energy to mechanical energy. Many studies have shown that such chemical waves can affect the direction and magnitude of the self-propelled motion in these droplets \cite{suematsu2016oscillation,back2023electrotaxis}. Several research groups have investigated BZ reaction droplets to understand self-propelled and run-and-tumble motions, the effect of external electric fields, and the interactions among droplets in an oil medium  \cite{back2023electrotaxis,suematsu2021spontaneous,kitahata2011spontaneous,kumar2021fast}. The interaction studies of BZ droplets were conducted in capillary tubes \cite{delgado2011coupled,li2014combined} and in structured arrays \cite{chang2018towards}. Within these interaction experiments, the droplets were not free to move; they were compactly arranged and separated by oil containing surfactants, which prevented them from merging. They have observed that the chemical oscillations can be synchronised
-across droplets, and droplets could communicate via chemical signalling.
+One important class of chemically driven active droplets contains the Belousov-Zhabotinsky (BZ) reaction. 
+The BZ reaction is a complex, nonlinear chemical oscillatory reaction \cite{zaikin1970concentration,zhabotinsky1964periodical}. 
+In this reaction, chemical oscillations can be seen as a colour change. And these oscillations can propagate in space as chemical waves, 
+creating circular and spiral patterns~\cite{amrutha2022mechanism,amrutha2023theory,sebastian2024effect}. 
+When we place a droplet of BZ reagents in an oily medium, the chemical oscillations inside the BZ droplets drive the mechanical 
+motion, converting chemical energy to mechanical energy. Many studies have shown that such chemical waves can affect the direction 
+and magnitude of movement in these droplets \cite{suematsu2016oscillation,back2023electrotaxis}.
+Several research groups have used the BZ reaction droplets to study the effects of external and internal factors that
+affect the movement and the dynamics of multiple droplets~\cite{back2023electrotaxis,suematsu2021spontaneous,kitahata2011spontaneous,kumar2021fast}.
+Previous studies on the interaction were conducted in capillary tubes~\cite{delgado2011coupled,li2014combined} and in structured arrays~\cite{chang2018towards}, 
+where the particles were compactly arranged and separated by oil containing surfactants, which prevented them from merging. 
+They have observed that chemical oscillations can synchronise across droplets, and droplets can communicate via chemical signalling. 
+Note that these droplets were confined and could not move freely.
+
 In this paper, we investigate the interaction between two moving BZ
-droplets within a medium of moonolein-squalane oil. Our findings indicate that the sodium bromate concentration can control the activity of the BZ droplet. As the activity determined by sodium bromate concentration increases within a BZ droplet, the interaction time between the two droplets decreases. Furthermore, when two droplets with varying levels of activity come into contact, the interaction time is influenced more significantly by the droplet with the higher activity.
+droplets within a medium of moonolein-squalane oil. Our findings indicate that the sodium bromate 
+concentration can control the activity of the BZ droplet. As the activity determined by sodium bromate 
+concentration increases within a BZ droplet, the interaction time between the two droplets decreases. 
+Furthermore, when two droplets with varying levels of activity come into contact, the interaction time 
+is influenced more significantly by the droplet with the higher activity. 
+We also study the movement patterns of droplets of different sizes and catalogue three different kinds of binary interactions between droplets.
+
 \section{Methods}
-The Belousov-Zhabotinsky (BZ) reaction is a chemical process characterised by cyclic oscillations. These oscillations can be seen within a BZ droplet, displaying red and blue colours that correspond to the oxidation states of a metal catalyst. When the metal catalyst is in its oxidized state ($Fe^{4+}$), the BZ reaction exhibits a blue colour, while in its reduced state ($Fe^{3+}$), it appears red. This phenomenon allows us to observe the chemical oscillations within the BZ droplet, as visible in Figure \ref{fig:setup}.
-The Belousov-Zhabotinsky reaction is a complex process that consists of three main stages, each involving numerous sub-reactions. In the first stage, there is a continuous consumption of bromide (\ch{Br^-}) ions. Once the concentration of these ions drops below a certain level, the second stage begins. During the second stage, the metal catalyst undergoes oxidation, and the reaction turns blue. The third stage involves a reduction of the metal catalyst, leading to a significant increase in the concentration of \ch{Br^-} ions. As the levels of \ch{Br^-} ions rise sufficiently, the cycle restarts with the first stage. The third stage essentially acts as a reset for the entire reaction \cite{field1974oscillations}. This process can be visualised through the BZ droplet, as shown in Figure \ref{fig:BZ Droplet}.
+
+The Belousov-Zhabotinsky (BZ) reaction is a chemical process characterised by
+cyclic oscillations. These oscillations can be seen within a BZ droplet,
+displaying red and blue colours that correspond to the oxidation states of a
+metal catalyst. When the metal catalyst is in its oxidized state ($Fe^{4+}$),
+the BZ reaction exhibits a blue colour, while in its reduced state ($Fe^{3+}$),
+it appears red. This phenomenon allows us to observe the chemical oscillations
+within the BZ droplet, as visible in Figure \ref{fig:setup}.  The
+Belousov-Zhabotinsky reaction is a complex process that consists of three main
+stages, each involving numerous sub-reactions. In the first stage, there is a
+continuous consumption of bromide (\ch{Br^-}) ions. Once the concentration of
+these ions drops below a certain level, the second stage begins. During the
+second stage, the metal catalyst undergoes oxidation, and the reaction turns
+blue. The third stage involves a reduction of the metal catalyst, leading to a
+significant increase in the concentration of \ch{Br^-} ions. As the levels of
+\ch{Br^-} ions rise sufficiently, the cycle restarts with the first stage. The
+third stage essentially acts as a reset for the entire reaction
+\cite{field1974oscillations}. This process can be visualised through the BZ
+droplet, as shown in Figure \ref{fig:BZ Droplet}.
 
 
 \begin{figure}[H]
